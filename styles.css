@@ -1,0 +1,127 @@
+/* Variable */
+
+* {
+    --primaryColor: rgb(93, 93, 93);
+}
+  
+/* Global */
+* {
+    box-sizing: border-box;
+}
+  
+body {
+    margin: 0;
+    height: 100%;
+    font-size: 1em;
+    font-family: 'Playfair', serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #1f1d1d;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primaryColor);
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    gap: 16px;
+    color: #fff;
+    margin: 5px;
+}
+
+.pimg1, .pimg2, .pimg3, .pimg4, .pimg5{
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.pimg1 {
+    background-image: url(/Images/hero_600w_400h.jpg);
+    min-height: 400px;
+}
+
+.pimg2 {
+    background-image: url(/Images/Bergen-Ulriksbanen.jpg);
+    min-height: 400px;
+}
+
+.pimg3 {
+    background-image: url(/Images/kart\ ulrikk\ turnarhytta.PNG);
+    min-height: 400px;
+}
+
+.pimg4 {
+    background-image: url(/Images/plakat\ ulriken\ turnerhytta.jpg);
+    min-height: 400px;
+}
+
+.pimg5 {
+    background-image: url(/Images/Turnerhytten.jpeg);
+    min-height: 400px;
+}
+
+.section {
+    text-align: center;
+    padding: 50px 80px;
+}
+
+.section-light {
+    background-color: #f4f4f4;
+    color: #666;
+}
+
+.section-dark {
+    background-color: #282e34;
+    color: #ddd;
+}
+
+.ptext {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.ptext, .border {
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+}
+
+.ptext, .border, .trans {
+    background-color: transparent;
+}
+
+a:link, a:visited {
+    color: blueviolet;
+}
+  
+  a:focus, a:hover {
+    color: rgb(34, 248, 248);
+}
+
+@media (max-width: 426px) {
+    .pimg1 {
+        width: 425px;
+        height: 400px;
+    }
+    .section section-light {
+        width: 425px;
+        height: 587.78px;
+    }
+    .pimg1, .pimg2, .pimg3, .pimg4, .pimg5 {
+        width: 425px;
+    }
+}
