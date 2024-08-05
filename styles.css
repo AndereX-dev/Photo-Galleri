@@ -104,6 +104,11 @@ ul {
     background-color: transparent;
 }
 
+.activities {
+    font-size: 18px;
+    text-decoration: underline;
+}
+
 a:link, a:visited {
     color: blueviolet;
 }
